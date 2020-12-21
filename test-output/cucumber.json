@@ -1,0 +1,819 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Should see LIST USERS of all existing users",
+        "description": "",
+        "id": "api-test;should-see-list-users-of-all-existing-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1314855757,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get the default list of users for on page 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 44
+                }
+              ],
+              "location": "ApiStepDefinition.iGetTheDefaultListofusersforonpage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 630895521,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get the list of all users within every page",
+            "match": {
+              "location": "ApiStepDefinition.iGetTheListOfAllUsers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16751,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see total users count equals the number of user ids",
+            "match": {
+              "location": "ApiStepDefinition.iShouldMatchTotalCount()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Should see SINGLE USER data",
+        "description": "",
+        "id": "api-test;should-see-single-user-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 126888476,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I make a search for user 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 25
+                }
+              ],
+              "location": "ApiStepDefinition.iMakeASearchForUser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17716859,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see the following user data",
+            "match": {
+              "location": "ApiStepDefinition.IShouldSeeFollowingUserData(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "first_name",
+                  "Emma"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "email",
+                  "emma.wong@reqres.in"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Should see SINGLE USER NOT FOUND error code",
+        "description": "",
+        "id": "api-test;should-see-single-user-not-found-error-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 129254772,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I make a search for user 55",
+            "match": {
+              "arguments": [
+                {
+                  "val": "55",
+                  "offset": 25
+                }
+              ],
+              "location": "ApiStepDefinition.iMakeASearchForUser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 537431,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I receive error code 404 in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 21
+                }
+              ],
+              "location": "ApiStepDefinition.iReceiveErrorCodeInResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "CREATE a user",
+        "description": "",
+        "id": "api-test;create-a-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 203386652,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I create a user with following Peter Manager",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Peter",
+                  "offset": 31
+                },
+                {
+                  "val": "Manager",
+                  "offset": 37
+                }
+              ],
+              "location": "ApiStepDefinition.iCreateUserWithFollowing(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28393714,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "response should contain the following data",
+            "match": {
+              "location": "ApiStepDefinition.iReceiveErrorCodeInResponse(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job",
+                  "id",
+                  "createdAt"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@APITest"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "CREATE a user",
+        "description": "",
+        "id": "api-test;create-a-user;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 168646896,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I create a user with following Liza Sales",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Liza",
+                  "offset": 31
+                },
+                {
+                  "val": "Sales",
+                  "offset": 36
+                }
+              ],
+              "location": "ApiStepDefinition.iCreateUserWithFollowing(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26657476,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "response should contain the following data",
+            "match": {
+              "location": "ApiStepDefinition.iReceiveErrorCodeInResponse(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job",
+                  "id",
+                  "createdAt"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@APITest"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 32,
+            "value": "#In given step it should be \u0027successfully\u0027 instead of \u0027unsuccessfully\u0027"
+          },
+          {
+            "line": 33,
+            "value": "#Scenario: LOGIN - SUCCESSFUL by a user"
+          },
+          {
+            "line": 34,
+            "value": "#  Given I login unsuccessfully with the following data"
+          },
+          {
+            "line": 35,
+            "value": "#    | Email              | Password   |"
+          },
+          {
+            "line": 36,
+            "value": "#    | eve.holt@reqres.in | cityslicka |"
+          },
+          {
+            "line": 37,
+            "value": "#  Then I should get a response code of 200"
+          },
+          {
+            "line": 39,
+            "value": "#new one created as same scenario for previous"
+          }
+        ],
+        "line": 40,
+        "name": "LOGIN - SUCCESSFUL by a user",
+        "description": "",
+        "id": "api-test;login---successful-by-a-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 175698147,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I login successfully with the following data",
+            "match": {
+              "location": "ApiStepDefinition.i_login_successfully_with_the_following_data(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "eve.holt@reqres.in"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "Password",
+                  "cityslicka"
+                ],
+                "line": 43
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69429,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should get a response code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "ApiStepDefinition.iShouldGetAResponseCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "LOGIN - UNSUCCESSFUL by a user",
+        "description": "",
+        "id": "api-test;login---unsuccessful-by-a-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 178052023,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I login unsuccessfully with the following data",
+            "match": {
+              "location": "ApiStepDefinition.iLoginSuccesfullyWithFollowingData(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "eve.holt@reqres.in"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "Password",
+                  ""
+                ],
+                "line": 49
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65448,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I should get a response code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 32
+                }
+              ],
+              "location": "ApiStepDefinition.iShouldGetAResponseCodeOf(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6505711,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I should see the following response message:",
+            "match": {
+              "location": "ApiStepDefinition.iShouldSeeTheFollowingResponseMessage(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error",
+                  "Missing password"
+                ],
+                "line": 52
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 54,
+        "name": "Should see the list of users with DELAYED RESPONSE",
+        "description": "",
+        "id": "api-test;should-see-the-list-of-users-with-delayed-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3181556697,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I wait for the user list to load",
+            "match": {
+              "location": "ApiStepDefinition.iWaitForUserListToLoad()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8268735,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I should see that every user has a unique id",
+            "match": {
+              "location": "ApiStepDefinition.iShouldSeeThatEveryUserHasAUniqueID()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "API test",
+    "description": "",
+    "id": "api-test",
+    "keyword": "Feature",
+    "uri": "src/test/java/API-Test.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@APITest"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1459030372,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Check item total cost and tax",
+        "description": "",
+        "id": "checkout-items-in-the-basket;check-item-total-cost-and-tax",
+        "after": [
+          {
+            "result": {
+              "duration": 555741326,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.screenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1344959194,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the home page",
+            "match": {
+              "location": "UIStepDefinition.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1488096296,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login in with the following details",
+            "match": {
+              "location": "UIStepDefinition.i_login_in_with_the_following_details(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "standard_user"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Password",
+                  "secret_sauce"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1376151617,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I add the following items to the basket",
+            "match": {
+              "location": "UIStepDefinition.i_add_the_following_items_to_the_basket(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bolt T-Shirt"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Sauce Labs Onesie"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21698965,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I  should see 4 items added to the shopping cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 14
+                }
+              ],
+              "location": "UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1093989005,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the shopping cart",
+            "match": {
+              "location": "UIStepDefinition.i_click_on_the_shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1305373627,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I verify that the QTY count for each item should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 52
+                }
+              ],
+              "location": "UIStepDefinition.i_verify_that_the_QTY_count_for_each_item_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 343782285,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I remove the following item:",
+            "match": {
+              "location": "UIStepDefinition.i_remove_the_following_item(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16632657,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I  should see 3 items added to the shopping cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 14
+                }
+              ],
+              "location": "UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76474539,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the CHECKOUT button",
+            "match": {
+              "location": "UIStepDefinition.i_click_on_the_CHECKOUT_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 373659994,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I type \"FirstName\" for First Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FirstName",
+                  "offset": 8
+                }
+              ],
+              "location": "UIStepDefinition.i_type_for_First_Name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 349378772,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I type \"LastName\" for Last Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LastName",
+                  "offset": 8
+                }
+              ],
+              "location": "UIStepDefinition.i_type_for_Last_Name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 351250460,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I type \"EC1A 9JU\" for ZIP/Postal Code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EC1A 9JU",
+                  "offset": 8
+                }
+              ],
+              "location": "UIStepDefinition.i_type_for_ZIP_Postal_Code(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1103201732,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on the CONTINUE button",
+            "match": {
+              "location": "UIStepDefinition.i_click_on_the_CONTINUE_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1064677305,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Item total will be equal to the total of items on the list",
+            "match": {
+              "location": "UIStepDefinition.item_total_will_be_equal_to_the_total_of_items_on_the_list()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30739510,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "a Tax rate of 8 % is applied to the total",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 14
+                }
+              ],
+              "location": "UIStepDefinition.a_Tax_rate_of_is_applied_to_the_total(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout items in the basket",
+    "description": "Please use home page of https://www.saucedemo.com/",
+    "id": "checkout-items-in-the-basket",
+    "keyword": "Feature",
+    "uri": "src/test/java/UI-Test.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@UITest"
+      }
+    ]
+  }
+]
