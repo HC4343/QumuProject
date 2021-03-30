@@ -45,21 +45,21 @@ formatter.match({
   "location": "ApiStepDefinition.iGetTheDefaultListofusersforonpage(String)"
 });
 formatter.result({
-  "duration": 1314855757,
+  "duration": 1565621829,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.iGetTheListOfAllUsers()"
 });
 formatter.result({
-  "duration": 630895521,
+  "duration": 511803384,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.iShouldMatchTotalCount()"
 });
 formatter.result({
-  "duration": 16751,
+  "duration": 18567,
   "status": "passed"
 });
 formatter.scenario({
@@ -106,14 +106,14 @@ formatter.match({
   "location": "ApiStepDefinition.iMakeASearchForUser(String)"
 });
 formatter.result({
-  "duration": 126888476,
+  "duration": 131007349,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.IShouldSeeFollowingUserData(String,String\u003e)"
 });
 formatter.result({
-  "duration": 17716859,
+  "duration": 15080425,
   "status": "passed"
 });
 formatter.scenario({
@@ -144,7 +144,7 @@ formatter.match({
   "location": "ApiStepDefinition.iMakeASearchForUser(String)"
 });
 formatter.result({
-  "duration": 129254772,
+  "duration": 153847014,
   "status": "passed"
 });
 formatter.match({
@@ -157,7 +157,7 @@ formatter.match({
   "location": "ApiStepDefinition.iReceiveErrorCodeInResponse(int)"
 });
 formatter.result({
-  "duration": 537431,
+  "duration": 739696,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -275,14 +275,14 @@ formatter.match({
   "location": "ApiStepDefinition.iCreateUserWithFollowing(String,String)"
 });
 formatter.result({
-  "duration": 203386652,
+  "duration": 186514372,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.iReceiveErrorCodeInResponse(String\u003e)"
 });
 formatter.result({
-  "duration": 28393714,
+  "duration": 30089696,
   "status": "passed"
 });
 formatter.scenario({
@@ -338,14 +338,14 @@ formatter.match({
   "location": "ApiStepDefinition.iCreateUserWithFollowing(String,String)"
 });
 formatter.result({
-  "duration": 168646896,
+  "duration": 312883016,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.iReceiveErrorCodeInResponse(String\u003e)"
 });
 formatter.result({
-  "duration": 26657476,
+  "duration": 21457303,
   "status": "passed"
 });
 formatter.scenario({
@@ -416,7 +416,7 @@ formatter.match({
   "location": "ApiStepDefinition.i_login_successfully_with_the_following_data(String,String\u003e)"
 });
 formatter.result({
-  "duration": 175698147,
+  "duration": 192541989,
   "status": "passed"
 });
 formatter.match({
@@ -429,7 +429,7 @@ formatter.match({
   "location": "ApiStepDefinition.iShouldGetAResponseCodeOf(int)"
 });
 formatter.result({
-  "duration": 69429,
+  "duration": 85934,
   "status": "passed"
 });
 formatter.scenario({
@@ -484,7 +484,7 @@ formatter.match({
   "location": "ApiStepDefinition.iLoginSuccesfullyWithFollowingData(String,String\u003e)"
 });
 formatter.result({
-  "duration": 178052023,
+  "duration": 189676166,
   "status": "passed"
 });
 formatter.match({
@@ -497,14 +497,14 @@ formatter.match({
   "location": "ApiStepDefinition.iShouldGetAResponseCodeOf(int)"
 });
 formatter.result({
-  "duration": 65448,
+  "duration": 53917,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.iShouldSeeTheFollowingResponseMessage(String,String\u003e)"
 });
 formatter.result({
-  "duration": 6505711,
+  "duration": 6029581,
   "status": "passed"
 });
 formatter.scenario({
@@ -529,14 +529,14 @@ formatter.match({
   "location": "ApiStepDefinition.iWaitForUserListToLoad()"
 });
 formatter.result({
-  "duration": 3181556697,
+  "duration": 3270593002,
   "status": "passed"
 });
 formatter.match({
   "location": "ApiStepDefinition.iShouldSeeThatEveryUserHasAUniqueID()"
 });
 formatter.result({
-  "duration": 8268735,
+  "duration": 9677641,
   "status": "passed"
 });
 formatter.uri("src/test/java/UI-Test.feature");
@@ -554,7 +554,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 1459030372,
+  "duration": 2084835190,
   "status": "passed"
 });
 formatter.scenario({
@@ -694,21 +694,21 @@ formatter.match({
   "location": "UIStepDefinition.iAmOnTheHomePage()"
 });
 formatter.result({
-  "duration": 1344959194,
+  "duration": 1620468731,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.i_login_in_with_the_following_details(String,String\u003e)"
 });
 formatter.result({
-  "duration": 1488096296,
+  "duration": 1280418906,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.i_add_the_following_items_to_the_basket(String\u003e)"
 });
 formatter.result({
-  "duration": 1376151617,
+  "duration": 1369780066,
   "status": "passed"
 });
 formatter.match({
@@ -721,14 +721,14 @@ formatter.match({
   "location": "UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
 });
 formatter.result({
-  "duration": 21698965,
+  "duration": 18964557,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.i_click_on_the_shopping_cart()"
 });
 formatter.result({
-  "duration": 1093989005,
+  "duration": 1048132300,
   "status": "passed"
 });
 formatter.match({
@@ -741,14 +741,14 @@ formatter.match({
   "location": "UIStepDefinition.i_verify_that_the_QTY_count_for_each_item_should_be(int)"
 });
 formatter.result({
-  "duration": 1305373627,
+  "duration": 1289311512,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.i_remove_the_following_item(String\u003e)"
 });
 formatter.result({
-  "duration": 343782285,
+  "duration": 340056877,
   "status": "passed"
 });
 formatter.match({
@@ -761,14 +761,14 @@ formatter.match({
   "location": "UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
 });
 formatter.result({
-  "duration": 16632657,
+  "duration": 17667965,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.i_click_on_the_CHECKOUT_button()"
 });
 formatter.result({
-  "duration": 76474539,
+  "duration": 51320828,
   "status": "passed"
 });
 formatter.match({
@@ -781,7 +781,7 @@ formatter.match({
   "location": "UIStepDefinition.i_type_for_First_Name(String)"
 });
 formatter.result({
-  "duration": 373659994,
+  "duration": 389262001,
   "status": "passed"
 });
 formatter.match({
@@ -794,7 +794,7 @@ formatter.match({
   "location": "UIStepDefinition.i_type_for_Last_Name(String)"
 });
 formatter.result({
-  "duration": 349378772,
+  "duration": 357156964,
   "status": "passed"
 });
 formatter.match({
@@ -807,21 +807,21 @@ formatter.match({
   "location": "UIStepDefinition.i_type_for_ZIP_Postal_Code(String)"
 });
 formatter.result({
-  "duration": 351250460,
+  "duration": 354774193,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.i_click_on_the_CONTINUE_button()"
 });
 formatter.result({
-  "duration": 1103201732,
+  "duration": 1071687065,
   "status": "passed"
 });
 formatter.match({
   "location": "UIStepDefinition.item_total_will_be_equal_to_the_total_of_items_on_the_list()"
 });
 formatter.result({
-  "duration": 1064677305,
+  "duration": 1055971769,
   "status": "passed"
 });
 formatter.match({
@@ -834,11 +834,11 @@ formatter.match({
   "location": "UIStepDefinition.a_Tax_rate_of_is_applied_to_the_total(int)"
 });
 formatter.result({
-  "duration": 30739510,
+  "duration": 32065750,
   "status": "passed"
 });
 formatter.after({
-  "duration": 555741326,
+  "duration": 649519333,
   "status": "passed"
 });
 });
